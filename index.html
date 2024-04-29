@@ -8,6 +8,11 @@
         integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Document</title>
+    <style>
+        * {
+            direction: rtl !important;
+        }
+    </style>
 </head>
 
 <body dir="rtl" style="padding-top: 60px;">
@@ -159,7 +164,7 @@
                 <!-- right  -->
                 <div class="col-lg-6">
 
-                    <img class="img-fluid mb-3" src="image-b/accor.jpg" alt="">
+                    <img class="img-fluid mb-3 d-none d-lg-block" src="image-b/accor.jpg" alt="">
 
                 </div>
 
@@ -335,7 +340,8 @@
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
-                        type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">درباره ما</button>
+                        type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">درباره
+                        ما</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
@@ -346,9 +352,9 @@
 
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-                    tabindex="0">  محتوای خانه</div>
+                    tabindex="0"> محتوای خانه</div>
                 <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
-                    tabindex="0">محتوای پروفایل  </div>
+                    tabindex="0">محتوای پروفایل </div>
                 <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
                     tabindex="0"> محتوای درباره ی ما</div>
                 <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
@@ -359,8 +365,58 @@
     </div>
 
 
+    <!-- form  -->
 
+    <div class="custom-form py-3">
+        <div class="container">
+            <h4 class="my-5">form</h4>
+            <div class="row">
+                <div class="col-lg-6 col-12">
 
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label"> نام و نام خانوادگی:</label>
+                            <input style="direction: rtl;" type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text"> لطفا نام و نام خانوادگی خود را وارد کنید.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label"> موضوع:</label>
+                            <input style="direction: rtl;" type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label"> آپلود فایل:</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">متن پیام :</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>انتخاب</option>
+                            <option value="1">یک</option>
+                            <option value="2">سه</option>
+                            <option value="3">پنج</option>
+                        </select>
+
+                        <button class="btn btn-primary my-3">ارسال</button>
+                    </form>
+
+                </div>
+
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img class="img-fluid" src="image-b/3820042.jpg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 
 
 
