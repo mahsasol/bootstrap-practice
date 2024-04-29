@@ -13,10 +13,10 @@
 
     <!-- download -connect with link  -->
 
-        <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.rtl.min.css">
-        <link rel="stylesheet" href="libs/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="libs/bootstrap-icons/font/bootstrap-icons.css">
 
-    <title>Document</title>
+    <title>bootstrap</title>
     <style>
         * {
             direction: rtl !important;
@@ -413,7 +413,7 @@
                             <option value="3">پنج</option>
                         </select>
 
-                        <button class="btn btn-primary my-3">ارسال</button>
+                        <button class="btn btn-primary my-3" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="  این یک دکمه است"></class>ارسال</button>
                     </form>
 
                 </div>
@@ -427,6 +427,7 @@
         </div>
     </div>
 
+    <!-- tool tip  -->
 
 
     <br><br><br><br><br><br><br><br><br><br>
@@ -443,6 +444,8 @@
         crossorigin="anonymous"></script> -->
 
     <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))</script>
 </body>
 
 </html>
